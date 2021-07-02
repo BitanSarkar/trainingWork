@@ -1,6 +1,7 @@
 package com.company.message.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -16,6 +17,8 @@ public class MessageServiceApplication {
 
 	@Autowired
 	private MessageDetailsProxy proxy;
+	@Value(value = "${server.port}")
+	private String port;
 
 	public static void main(String[] args) {
 		SpringApplication.run(MessageServiceApplication.class, args);
@@ -23,10 +26,10 @@ public class MessageServiceApplication {
 
 	@GetMapping("/message")
 	public String getMessage() {
-		return "Message Service Called";
+		return "Message Service Called\nRunning on port : " + port;
 	}
 
-	@GetMapping("/message-details")
+	@GetMapping("/feign/message-details")
 	public String getMessageDetails() {
 		return proxy.getMessageDetails();
 	}
