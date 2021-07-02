@@ -1,0 +1,54 @@
+GET http://localhost:9090/ HTTP/1.1
+
+###
+
+GET http://localhost:9090/users HTTP/1.1
+
+###
+
+GET http://localhost:9090/users/101 HTTP/1.1
+
+###
+
+POST http://localhost:9090/users HTTP/1.1
+content-type: application/json
+
+{
+    "id": 102,
+    "name": "Deepanjan",
+    "income": 1234.0,
+    "dob": "2021-06-30T07:00:33.501+00:00"
+}
+
+###
+
+PUT http://localhost:9090/users HTTP/1.1
+content-type: application/json
+
+{
+    "id": 102,
+    "name": "Deepanjan Datta",
+    "income": 4444.0,
+    "dob": "2021-06-30T07:00:33.501+00:00"
+}
+
+###
+
+DELETE http://localhost:9090/users/102 HTTP/1.1
+
+###
+
+GET http://localhost:9090/users?name=Suhas HTTP/1.1
+
+###
+
+GET http://localhost:9090/users?sal=1000 HTTP/1.1
+
+###
+
+GET http://localhost:9090/users?sal=2000 HTTP/1.1
+
+### 
+
+GET http://localhost:9090/users/obj/10101 HTTP/1.1
+

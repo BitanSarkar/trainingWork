@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Inside registration</title>
+</head>
+	<body>
+		<h2>Regitration</h2>
+		<form method="post" action="registration">
+			<table border="2px">
+				<tr>
+					<td>Enter user name</td>
+					<td><input type="text" name="user-name"/></td>
+				</tr>
+				<tr>
+					<td>Enter user password</td>
+					<td><input type="password" name="user-name"/></td>
+				</tr>
+				<tr>
+					<td>Select gender</td>
+					<td>
+						<input type="radio" name="gender" value="male"/> Male
+						<input type="radio" name="gender" value="female"/> Female
+					</td>
+				</tr>
+				<tr>
+					<td>Select interest</td>
+					<td>
+						<input type="checkbox" name="interest" value="sports"/> Sports
+						<input type="checkbox" name="interest" value="politics"/> Politics
+						<input type="checkbox" name="interest" value="cooking"/> Cooking
+						<input type="checkbox" name="interest" value="biking"/> Biking
+					</td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Register"/></td>
+					<td><input type="reset" value="Reset"/></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

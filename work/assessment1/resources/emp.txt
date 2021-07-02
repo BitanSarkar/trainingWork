@@ -1,0 +1,8 @@
+|empname|salary|email|location|gender|
+|Kumar|1234|kumar@gmail.com|blr|male|
+|Chaitra|4433|chaitra@gmail.com|del|female|
+|Kanchan|3311|kanchan@outlook.com|mum|female|
+|priya|4411|priya@gmail.com|chn|female|
+|Bitan|4433|bitan@gmail.com|blr|male|
+|Krishna|3941|krishna@outlook.com|mum|male|
+|Akansha|8411|akansha@gmail.com|chn|female|

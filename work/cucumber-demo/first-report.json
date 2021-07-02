@@ -1,0 +1,697 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "The task for forgetting password",
+        "description": "",
+        "id": "forgot-password-test;the-task-for-forgetting-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 435723400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the site is up",
+            "match": {
+              "location": "ForgotPasswordSteps.the_site_is_up()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8182100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "check the password forgot for",
+            "match": {
+              "location": "ForgotPasswordSteps.check_the_password_forgot_for(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "login",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "bitan",
+                  "natib321"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "sushruth",
+                  "htursus321"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "sanjana",
+                  "anajnas321"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "joker",
+                  "batman\u003c3"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 208700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "show relevant message",
+            "match": {
+              "location": "ForgotPasswordSteps.show_relevant_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Forgot password test",
+    "description": "",
+    "id": "forgot-password-test",
+    "keyword": "Feature",
+    "uri": "forgotPassword.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Sanity"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 12,
+        "name": "",
+        "description": "",
+        "id": "testing-for-login-feature;;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 411100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "application is running",
+            "match": {
+              "location": "LoginSteps.application_is_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2022000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters valid email id as \"hello@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hello@gmail.com",
+                  "offset": 31
+                }
+              ],
+              "location": "LoginSteps.user_enters_valid_email_id_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 294300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "password as \"hello123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hello123",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginSteps.password_as(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 97200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "take user to home page",
+            "match": {
+              "location": "LoginSteps.take_user_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Login"
+          },
+          {
+            "line": 1,
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "",
+        "description": "",
+        "id": "testing-for-login-feature;;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 114900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "application is running",
+            "match": {
+              "location": "LoginSteps.application_is_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1528900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters valid email id as \"bita@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bita@gmail.com",
+                  "offset": 31
+                }
+              ],
+              "location": "LoginSteps.user_enters_valid_email_id_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 493900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "password as \"bitan25\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bitan25",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginSteps.password_as(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 187900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "take user to home page",
+            "match": {
+              "location": "LoginSteps.take_user_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Login"
+          },
+          {
+            "line": 1,
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "",
+        "description": "",
+        "id": "testing-for-login-feature;;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 231500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "application is running",
+            "match": {
+              "location": "LoginSteps.application_is_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 199100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters valid email id as \"admin@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin@gmail.com",
+                  "offset": 31
+                }
+              ],
+              "location": "LoginSteps.user_enters_valid_email_id_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 131800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "password as \"admin115\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin115",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginSteps.password_as(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "take user to home page",
+            "match": {
+              "location": "LoginSteps.take_user_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Login"
+          },
+          {
+            "line": 1,
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "testing for login feature",
+    "description": "",
+    "id": "testing-for-login-feature",
+    "keyword": "Feature",
+    "uri": "login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Login"
+      },
+      {
+        "line": 1,
+        "name": "@Sanity"
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# this is blah blah"
+      },
+      {
+        "line": 2,
+        "value": "# Author : Bitan Sarkar"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "id": "registering-user-to-the-application---stacktooflow;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 128400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the application is loaded on the site stacktooflow.come",
+            "match": {
+              "location": "Registration.the_application_is_loaded_on_the_site_stacktooflow_come()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 343600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user clicks on the RegButton",
+            "match": {
+              "location": "Registration.the_user_clicks_on_the_RegButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 238800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enter user name as \"Bitan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bitan",
+                  "offset": 20
+                }
+              ],
+              "location": "Registration.enters_user_name_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 647000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "enter password as \"secret123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret123",
+                  "offset": 19
+                }
+              ],
+              "location": "Registration.enter_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "validate the format",
+            "match": {
+              "location": "Registration.validate_the_format()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 510300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "submit it to server",
+            "match": {
+              "location": "Registration.submit_it_to_server()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@BitanRegister"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "",
+        "description": "",
+        "id": "registering-user-to-the-application---stacktooflow;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 293800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the application is loaded on the site stacktooflow.come",
+            "match": {
+              "location": "Registration.the_application_is_loaded_on_the_site_stacktooflow_come()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 183600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user clicks on the RegButton",
+            "match": {
+              "location": "Registration.the_user_clicks_on_the_RegButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 126600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "enter user name as \"Baba\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Baba",
+                  "offset": 20
+                }
+              ],
+              "location": "Registration.enters_user_name_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 127500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "enter password as \"secret457\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret457",
+                  "offset": 19
+                }
+              ],
+              "location": "Registration.enter_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "validate the format",
+            "match": {
+              "location": "Registration.validate_the_format()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 73600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "submit it to server",
+            "match": {
+              "location": "Registration.submit_it_to_server()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "",
+        "description": "",
+        "id": "registering-user-to-the-application---stacktooflow;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 239100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the application is loaded on the site stacktooflow.come",
+            "match": {
+              "location": "Registration.the_application_is_loaded_on_the_site_stacktooflow_come()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 174500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the user clicks on the RegButton",
+            "match": {
+              "location": "Registration.the_user_clicks_on_the_RegButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 223100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "enter user name as \"Maa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Maa",
+                  "offset": 20
+                }
+              ],
+              "location": "Registration.enters_user_name_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 226200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "enter password as \"hehehe321\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hehehe321",
+                  "offset": 19
+                }
+              ],
+              "location": "Registration.enter_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 268700,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "validate the format",
+            "match": {
+              "location": "Registration.validate_the_format()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 77200,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "submit it to server",
+            "match": {
+              "location": "Registration.submit_it_to_server()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "registering user to the application - StackTooFlow",
+    "description": "",
+    "id": "registering-user-to-the-application---stacktooflow",
+    "keyword": "Feature",
+    "uri": "registration.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@Registration"
+      },
+      {
+        "line": 3,
+        "name": "@Sanity"
+      }
+    ]
+  }
+]
