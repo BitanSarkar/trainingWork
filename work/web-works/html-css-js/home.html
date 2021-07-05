@@ -1,0 +1,221 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackQFlow</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=616da833cd32">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/Channels/channels.css?v=89163e79f6d2">
+    
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        .head {
+            height: 10%;
+        }
+        .subhead {
+            height: 7%;
+            margin-top: 5%;
+            margin-inline: 5%;
+        }
+        hr {
+            width: 200%;
+            margin-left: -50%;
+        }
+        button.add{
+            width: 20%;
+            height: 80%;
+            color:rgb(255, 255, 255);
+            background-color: rgb(94, 167, 60);
+            font-size: 1.2rem;
+        }
+        .question-hyperlink {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="h-100">
+    <header class="navbar navbar-expand-sm navbar-dark bg-primary head">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: 2.5rem; margin-inline: 3%;">StackQFlow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-lg-2 mt-2">
+                    <li class="nav-item my-lg">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search Questions" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+                <a href="login.html" class="btn btn-danger me-2" type="submit">Login</a>
+                <a href="registration.html" class="btn btn-danger" type="submit" >Register</a>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid d-flex flex-column h-100 w-100 bg-light overflow-hidden">
+        <div class="d-md-flex flex-md-row align-items-center justify-content-between subhead">
+            <h1 class="bd-title">All Questions</h1>
+            <button class="btn btn-success add" type="Add Question">Add Question</button>
+        </div>
+        <br><br><br>
+        <hr>
+        <ul class="list-group container">
+            <li class="list-group-item">
+                
+                <div class="question-summary d-md-flex flex-md-row align-items-center justify-content-between">
+                    <div class="statscontainer p-2 flex-shrink-1 ">
+                        <div class="stats">
+                            <div class="vote">
+                                <div class="votes">
+                                    <span class="vote-count-post "><strong>10</strong></span>
+                                    <div class="viewcount">Up votes</div>
+                                </div>
+                            </div>
+                            <div class="status unanswered">
+                                <strong>5</strong>
+                                <div class="viewcount">Down votes</div>
+                            </div>
+                        </div>
+                        <div class="views">
+                            <strong>3</strong>
+                            <div class="viewcount">Answers</div>
+                        </div>
+                    </div>
+                    <div class="summary p-2 w-100">
+                        <h3><a href="/" class="question-hyperlink">Spring Data MongoDB: Type must not be null</a></h3>
+                        <div class="excerpt">
+                            I have large collection and I want to get some documents after aggregation pipeline. The following pipeline is correct when I try to MongoDB. But When I implement this on the spring project I am ...
+                        </div>
+                        <div class="grid ai-start fw-wrap">
+                            <div class="grid--cell">
+                                <div class="grid gs4 fw-wrap tags t-java t-spring t-mongodb t-spring-boot t-spring-data">
+                                    <a href="#" class="post-tag grid--cell btn btn-sm btn-primary"  rel="tag">java</a>
+                                    <a href="#" class="post-tag grid--cell btn btn-sm btn-primary"  rel="tag">spring</a>
+                                    <a href="#" class="post-tag grid--cell btn btn-sm btn-primary"  rel="tag">mongodb</a>
+                                    <a href="#" class="post-tag grid--cell btn btn-sm btn-primary"  rel="tag">spring-data</a>
+                                    <a href="#" class="post-tag grid--cell btn btn-sm btn-primary"  rel="tag">spring-boot</a>
+                                </div>
+                            </div>
+                            <div class="grid--cell ml-auto fl-shrink0 started mt0">
+                                <div class="user-info user-hover">
+                                    <div class="user-action-time">
+                                        asked <span title="2021-07-05 10:35:06Z" class="relativetime">1 min ago</span>
+                                    </div>
+                                    <div class="user-details">
+                                        <a href="/" class="question-hyperlink">Bitan Sarkar</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="question-summary d-md-flex flex-md-row align-items-center justify-content-between">
+                    <div class="statscontainer p-2 flex-shrink-1 ">
+                        <div class="stats">
+                            <div class="vote">
+                                <div class="votes">
+                                    <span class="vote-count-post "><strong>10</strong></span>
+                                    <div class="viewcount">Up votes</div>
+                                </div>
+                            </div>
+                            <div class="status unanswered">
+                                <strong>5</strong>
+                                <div class="viewcount">Down votes</div>
+                            </div>
+                        </div>
+                        <div class="views">
+                            <strong>3</strong>
+                            <div class="viewcount">Answers</div>
+                        </div>
+                    </div>
+                    <div class="summary p-2 w-100">
+                        <h3><a href="/" class="question-hyperlink">Spring Data MongoDB: Type must not be null</a></h3>
+                        <div class="excerpt">
+                            I have large collection and I want to get some documents after aggregation pipeline. The following pipeline is correct when I try to MongoDB. But When I implement this on the spring project I am ...
+                        </div>
+                        <div class="grid ai-start fw-wrap">
+                            <div class="grid--cell">
+                                <div class="grid gs4 fw-wrap tags t-java t-spring t-mongodb t-spring-boot t-spring-data">
+                                    <a href="#" class="post-tag grid--cell btn btn-sm btn-primary"  rel="tag">java</a>
+                                    <a href="#" class="post-tag grid--cell btn btn-sm btn-primary"  rel="tag">spring</a>
+                                    <a href="#" class="post-tag grid--cell btn btn-sm btn-primary"  rel="tag">mongodb</a>
+                                    <a href="#" class="post-tag grid--cell btn btn-sm btn-primary"  rel="tag">spring-data</a>
+                                    <a href="#" class="post-tag grid--cell btn btn-sm btn-primary"  rel="tag">spring-boot</a>
+                                </div>
+                            </div>
+                            <div class="grid--cell ml-auto fl-shrink0 started mt0">
+                                <div class="user-info user-hover">
+                                    <div class="user-action-time">
+                                        asked <span title="2021-07-05 10:35:06Z" class="relativetime">1 min ago</span>
+                                    </div>
+                                    <div class="user-details">
+                                        <a href="/" class="question-hyperlink">Bitan Sarkar</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="question-summary d-md-flex flex-md-row align-items-center justify-content-between">
+                    <div class="statscontainer p-2 flex-shrink-1 ">
+                        <div class="stats">
+                            <div class="vote">
+                                <div class="votes">
+                                    <span class="vote-count-post "><strong>10</strong></span>
+                                    <div class="viewcount">Up votes</div>
+                                </div>
+                            </div>
+                            <div class="status unanswered">
+                                <strong>5</strong>
+                                <div class="viewcount">Down votes</div>
+                            </div>
+                        </div>
+                        <div class="views">
+                            <strong>3</strong>
+                            <div class="viewcount">Answers</div>
+                        </div>
+                    </div>
+                    <div class="summary p-2 w-100">
+                        <h3><a href="/" class="question-hyperlink">Spring Data MongoDB: Type must not be null</a></h3>
+                        <div class="excerpt">
+                            I have large collection and I want to get some documents after aggregation pipeline. The following pipeline is correct when I try to MongoDB. But When I implement this on the spring project I am ...
+                        </div>
+                        <div class="grid ai-start fw-wrap">
+                            <div class="grid--cell">
+                                <div class="grid gs4 fw-wrap tags t-java t-spring t-mongodb t-spring-boot t-spring-data">
+                                    <a href="#" class="post-tag grid--cell btn btn-sm btn-primary"  rel="tag">java</a>
+                                    <a href="#" class="post-tag grid--cell btn btn-sm btn-primary"  rel="tag">spring</a>
+                                    <a href="#" class="post-tag grid--cell btn btn-sm btn-primary"  rel="tag">mongodb</a>
+                                    <a href="#" class="post-tag grid--cell btn btn-sm btn-primary"  rel="tag">spring-data</a>
+                                    <a href="#" class="post-tag grid--cell btn btn-sm btn-primary"  rel="tag">spring-boot</a>
+                                </div>
+                            </div>
+                            <div class="grid--cell ml-auto fl-shrink0 started mt0">
+                                <div class="user-info user-hover">
+                                    <div class="user-action-time">
+                                        asked <span title="2021-07-05 10:35:06Z" class="relativetime">1 min ago</span>
+                                    </div>
+                                    <div class="user-details">
+                                        <a href="/" class="question-hyperlink">Bitan Sarkar</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        
+    </div>
+</body>
+</html>

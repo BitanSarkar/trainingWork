@@ -1,0 +1,78 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackQFlow Login</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/stacks.css?v=616da833cd32">
+    <link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/Shared/Channels/channels.css?v=89163e79f6d2">
+    
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        .head {
+            height: 10%;
+        }
+        .subhead {
+            height: 7%;
+            margin-top: 5%;
+            margin-inline: 5%;
+        }
+        hr {
+            width: 200%;
+            margin-left: -50%;
+        }
+        .login {
+            width: 70%;
+        }
+        .box {
+            display: flex;
+            flex-flow: column;
+            height: 90%;
+        }
+        button.add{
+            width: 20%;
+            height: 80%;
+            color:rgb(255, 255, 255);
+            background-color: rgb(94, 167, 60);
+            font-size: 1.2rem;
+        }
+        .question-hyperlink {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="h-100">
+    <header class="navbar navbar-expand-sm navbar-dark bg-primary head">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: 2.5rem; margin-inline: 3%;">StackQFlow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </header>
+    <div class="container-fluid box d-flex flex-column d-md-flex flex-md-row align-items-center justify-content-between bg-light overflow-hidden">
+        <div class="container">
+            <form method="post"  action="registration">
+                <table>
+                    <tr>
+                        <td style="font-size:22px" width="250px" height="50px">Enter email</td>
+                        <td width="300px" ><input class="form-control" type="email" name="email" placeholder="Enter email"/></td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:22px" width="250px" height="50px">Enter password</td>
+                        <td width="300px" ><input class="form-control" type="password" name="password" placeholder="Enter password"/></td>
+                    </tr>
+                </tr>
+                
+                <tr>
+                    <td  width="250px" height="100px"><input type="submit" value="Login" style="margin-left:150%; width:100px" class="btn btn-primary"/></td>
+                    <td><input type="reset" value="Reset"  style="margin-left:80%; width:100px" class="btn btn-primary"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>
