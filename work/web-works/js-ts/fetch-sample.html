@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getUsers() {
+            URL = "https://jsonplaceholder.typicode.com/users";
+            fetch(URL)
+            .then(resp => resp.json())
+            .then(data => {
+                console.log(data)
+                renderStr = ""
+                data.forEach(user => {
+                renderStr = renderStr + 
+                        "<tr><td>"+user.username+"</td>"+
+                        "<td>"+user.email+"</td></tr>";
+                });
+                return renderStr;
+            })
+            .then(renderStr => {
+                document.getElementById('mytable').innerHTML = renderStr;
+            })
+            .catch(err => console.log(err))
+        }
+    </script>
+</head>
+<body>
+    <button onclick="getUsers()">Get Users</button>
+    <table id="mytable" border="2px">
+        
+    </table>
+</body>
+</html>

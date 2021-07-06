@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function function1() {
+            let name = prompt("Enter your name ");
+            let age = parseInt(prompt("Enter your age ", "18"));
+            
+            let val = "";
+            if (age > 18) {
+                val = "You can vote " + name;
+            }
+            else {
+                val = "You cannot vote " + name + ". Please wait for " + (18- age) + "years"; 
+            }
+            
+            document.getElementById("mydiv").innerHTML = val;
+        }
+        
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        
+        function sample() {
+            console.log("sample()");
+            console.log(sample.arguments.length);
+            for(let temp=0; temp<sample.arguments.length; temp++){
+                console.log("Arg: " + sample.arguments[temp]);
+            }
+        }
+        Person.prototype.display = function (){
+            console.log("Name " + this.name);
+            console.log("Age  " + this.age);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="function1()">Function 1</button>
+    <div id="mydiv"></div>
+    
+    <script>
+        p = new Person("Bitan", 24);
+        p.display();
+
+        sample();
+        sample(10);
+        sample(10,20);
+        sample(10,20,"Bitan");
+        sample(10,20,"Bitan", 5 , true);
+    </script>
+</body>
+</html>
