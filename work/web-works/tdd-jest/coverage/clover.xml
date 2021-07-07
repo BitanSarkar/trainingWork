@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1625635025916" clover="3.2.0">
+  <project timestamp="1625635025916" name="All files">
+    <metrics statements="21" coveredstatements="20" conditionals="16" coveredconditionals="11" methods="6" coveredmethods="6" elements="43" coveredelements="37" complexity="0" loc="21" ncloc="21" packages="1" files="1" classes="1"/>
+    <file name="util.js" path="D:\Users\bitsarka\work\web-works\tdd-jest\script\util.js">
+      <metrics statements="21" coveredstatements="20" conditionals="16" coveredconditionals="11" methods="6" coveredmethods="6"/>
+      <line num="1" count="2" type="stmt"/>
+      <line num="2" count="3" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="10" count="2" type="cond" truecount="3" falsecount="1"/>
+      <line num="13" count="2" type="cond" truecount="3" falsecount="1"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="19" count="1" type="cond" truecount="3" falsecount="1"/>
+      <line num="21" count="0" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="28" count="2" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="35" count="2" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="38" count="2" type="stmt"/>
+      <line num="39" count="1" type="cond" truecount="1" falsecount="1"/>
+    </file>
+  </project>
+</coverage>
