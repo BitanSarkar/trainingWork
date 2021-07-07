@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/02-self/main.css"],"names":[],"mappings":"AAAA,aACI,YAAa,CACb,iBAAkB,CAClB,uDAA4D,CAC5D,iBACJ","file":"main.72301a55.chunk.css","sourcesContent":[".app-content {\r\n    height: 450px;\r\n    font-style: italic;\r\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n    text-align: center;\r\n}\r\nh1 {\r\n    \r\n}"]}
