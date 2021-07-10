@@ -1,10 +1,10 @@
-package com.sapient.userservice;
+package com.company.rest.works;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UserServiceApplicationTests {
+class RestWorksApplicationTests {
 
 	@Test
 	void contextLoads() {

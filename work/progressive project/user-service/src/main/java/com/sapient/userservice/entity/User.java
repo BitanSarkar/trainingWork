@@ -11,12 +11,10 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "users")
-public class User implements Serializable {
+public class User{
 
-	private static final long serialVersionUID = -2343243243242432341L;
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id;
+	private long uid;
 
 	@Column(name = "username")
 	private String username;
@@ -38,12 +36,15 @@ public class User implements Serializable {
 		this.username=username;
 		this.password=password;
 		this.gender=gender;
+		String[] str = email.split("@");
+		this.uid = Math.abs((int)str[0].hashCode())^Math.abs((int)str[1].hashCode());
 	}
-	/**
-	 * @return the id
-	 */
-	public long getId() {
-		return id;
+
+	public long getUid() {
+		return uid;
+	}
+	public void setUid(long uid) {
+		this.uid = uid;
 	}
 
 	/**
@@ -71,6 +72,8 @@ public class User implements Serializable {
 	 * @param email the email to set
 	 */
 	public void setEmail(String email) {
+		String[] str = email.split("@");
+		this.uid = Math.abs((int)str[0].hashCode())^Math.abs((int)str[1].hashCode());
 		this.email = email;
 	}
 
